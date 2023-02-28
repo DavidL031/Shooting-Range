@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4746933133316558}
   m_Layer: 0
-  m_Name: GunProjectile
+  m_Name: ShootingRangeMachinegunBullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,11 +28,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4938817090503002}
+  - {fileID: 4759618120197066}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1970348455359966
+--- !u!1 &1972263900617114
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,24 +40,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4938817090503002}
-  - component: {fileID: 33998929649211706}
-  - component: {fileID: 23504124921910008}
-  - component: {fileID: 95754070211048704}
+  - component: {fileID: 4759618120197066}
+  - component: {fileID: 33500490464711448}
+  - component: {fileID: 23770369287215506}
   m_Layer: 0
-  m_Name: LaserShotGreen
+  m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4938817090503002
+--- !u!4 &4759618120197066
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970348455359966}
+  m_GameObject: {fileID: 1972263900617114}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -66,21 +65,21 @@ Transform:
   m_Father: {fileID: 4746933133316558}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.00001}
---- !u!33 &33998929649211706
+--- !u!33 &33500490464711448
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970348455359966}
-  m_Mesh: {fileID: 4300002, guid: ccb691c4549e63944be833290652ae14, type: 3}
---- !u!23 &23504124921910008
+  m_GameObject: {fileID: 1972263900617114}
+  m_Mesh: {fileID: 4300002, guid: d629e715556274f48b429e235e279c63, type: 3}
+--- !u!23 &23770369287215506
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970348455359966}
+  m_GameObject: {fileID: 1972263900617114}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -94,7 +93,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4b09cc511c1219b4b86a60a1abd507ac, type: 2}
+  - {fileID: 2100000, guid: 16b31d73e5d50b64cba25d9cc3b118c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,23 +115,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!95 &95754070211048704
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970348455359966}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: ccb691c4549e63944be833290652ae14, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

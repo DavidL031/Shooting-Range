@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4746933133316558}
   m_Layer: 0
-  m_Name: GunProjectile
+  m_Name: ShootingRangePistolBullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
